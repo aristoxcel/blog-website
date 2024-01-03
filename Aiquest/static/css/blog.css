@@ -1,0 +1,53 @@
+.blog-container{
+    background-color: blanchedalmond;
+    padding: 6rem 15rem;
+}
+
+#bh1{
+    color:midnightblue;
+}
+
+#bh2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#bp1{
+    font-size: 15px;
+}
+
+#bcb{
+    position: relative;
+}
+#bcb >#ba1{
+    position:absolute;
+    top: 240px;
+    height: 30px;
+    font-size: 17px;
+}
+#bcb >#ba2{
+    position:absolute;
+    top: 240px;
+    left:130px;
+    height: 30px;
+}
+
+#bcd{
+    border-radius: 8px;
+    background-color: floralwhite;
+    box-shadow: 0px 0px 7px black;
+}
+#bcd:hover{
+    border-radius: 10px;
+    background-color: floralwhite;
+    box-shadow: 0px 0px 10px teal;
+}
+
+#bhh{
+    font-size: 70px;
+}
+#bhh2{
+   width: 80%;
+   margin:0 auto;
+   color: black;
+}

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Contact {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div>
+        <div class="endgap"></div>
+        <h1 id="contact">Contact us</h1>
+        <h2 id="kotha">Get In Touch With an Expert</h2>
+    
+        <div class="endgap"></div>
+    </div>
+</div>
+<div class="second-contact">
+    <div class="endgap"></div>
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://github.com/aristoxcel"><i class="fa-2s fa fa fa-envelope"></i></a>
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <a id="mail" href="http://gmail.com">aristoxcel@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <a href="#"><i class="fa-solid fa-mobile"></i></a>
+              <div class="card-body">
+                <h5 class="card-title">Phone</h5>
+                <a id="phn" href="#">+8801911-309454</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i></a>
+              <div class="card-body">
+                <h5 class="card-title">Address</h5>
+                <a class="add"  href="http://google.com">Gandaria, Dhaka-1204, Bangladesh</a>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="endgap"></div>
+</div>
+<div class="third-contact">
+    <div class="message">Send Us Message
+        <div id="pera" class="text-muted">To enroll the course or any other query related to course module just send us message.</div>
+    </div>
+
+    
+<div class='container ' style="margin-top:110px;">
+ 
+      <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="mb-3">
+              <label class="form-label"></label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" name="name" placeholder="Name">
+          </div>
+          <div class="mb-3">
+              <label class="form-label"></label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" name="email" placeholder="Email Address">
+          </div>
+  
+          <div class="mb-5">
+              <label class="form-label"></label>
+              <input type="text" class="form-control" name="corseName" placeholder="Course name">
+          </div>
+          <div class="mb-2">
+            <area-label class="form-label"></area-label>
+            <textarea class="form-control" aria-describedby="emailHelp" name="msg" placeholder="Message"></textarea>
+        </div>
+  
+
+          <button type="submit" class="btn btn-info">SEND MESSAGE</button>
+  
+      </form>
+  <br>
+  </div>
+  <div class="endgap"></div>
+</div>
+{% endblock %}

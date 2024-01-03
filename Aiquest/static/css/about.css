@@ -1,0 +1,48 @@
+*{margin:0;
+    padding:0;}
+    
+    /* about page first div start */
+    .second-about{
+        background-color: aliceblue;
+    }
+    .approach{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .approach > .point{
+        margin:0 auto;
+        justify-content: center;
+        padding-top: 2rem;
+        font-size: 75px;
+        color: black;
+        font-weight: 30px;
+    }
+
+    .approach > .pointout{
+        margin-right:4rem;
+        margin-left:2rem;
+        padding-left: 1.5rem;
+        font-size: 19px;
+        padding-right: 5rem;
+        
+    }
+
+    hr{
+        width: 92%;
+        margin:0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* about page forth div start */
+    .forth-about  img{
+        height: 600px;
+        width: 70%;
+        margin:0 auto;
+    }
+    .forth-about button{
+        background-color: pink;
+    }
+    /* about page forth div end */

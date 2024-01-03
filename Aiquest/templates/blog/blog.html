@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Blog {% endblock %}
+
+{% block body %}
+<div class="career" style="color:white;margin:8rem; text-align:center">
+    
+<h1 id="bhh">This is Our Blog page</h1>
+<h3 id="bhh2">You can read here updated technology based documents. Also You can  publish your <strong>Tech</strong> related topics by login our site, for more informatoion you can conatact with us. Go <strong>Contact </strong>Page.</h3>
+
+    <div class="endgap"></div>
+</div>
+
+<!--card-->
+<div class="blog-container">
+    <div class="session">
+        <div class="row">
+            {% for i in bloger %}
+            <div class="col-lg-4 g-4">
+                <div id="bcd" class="card" style="width: 100%; height:600px;">
+                    <img id="bi1" src="{{i.image.url}}" class="card-img-top" style="height:300px;" alt="Blog image">
+                    <div id="bcb" class="card-body">
+                      <h3 id="bh1" class="card-title">{{i.blog_title}}</h3>
+                      <h5 id="bh2" class="card-title">{{i.blog_about}}</h5>
+                      <p id="bp1" class="card-text">{{i.blog_detail}}</p>
+                      <a id="ba1" href="#" class="btn btn-primary">read more</a>
+                      <a id="ba2" href="#" class="btn btn-danger">Delete</a>
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+           </div> 
+    </div>
+</div>
+{% endblock %}
